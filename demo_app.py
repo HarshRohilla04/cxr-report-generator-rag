@@ -23,6 +23,33 @@ pipeline = None
 def load_pipeline():
     global pipeline
     if pipeline is None:
+        print("Checking for core data dependencies...")
+        
+        # Verify core data exists before trying to load
+        missing = []
+        if not Path("models/multilabel_classifier_biomedclip_v2.pt").exists():
+            missing.append("models/multilabel_classifier_biomedclip_v2.pt")
+        if not Path("embeddings").exists() or not any(Path("embeddings").iterdir()):
+            missing.append("embeddings/ (directory is missing or empty)")
+        if not Path("faiss_index").exists() or not any(Path("faiss_index").iterdir()):
+            missing.append("faiss_index/ (directory is missing or empty)")
+            
+        if missing:
+            error_msg = (
+                "\n" + "="*80 + "\n"
+                "🚨 CRITICAL ERROR: MISSING CORE DATA 🚨\n\n"
+                "The pipeline cannot start because the following required files/directories are missing:\n"
+                + "\n".join(f"  - {m}" for m in missing) + "\n\n"
+                "HOW TO FIX THIS:\n"
+                "1. Go to the GitHub repository's 'Releases' page.\n"
+                "2. Download the 'core-data.zip' file.\n"
+                "3. Extract it directly into the 'major-project' folder.\n"
+                "4. Restart this app.\n"
+                + "="*80 + "\n"
+            )
+            print(error_msg)
+            sys.exit(1)
+            
         print("Loading pipeline (first run)...")
         pipeline = MedicalImagingPipeline(llm_provider="openai")
     return pipeline

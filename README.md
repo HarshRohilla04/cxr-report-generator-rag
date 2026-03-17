@@ -63,8 +63,12 @@ major-project/
    # Edit .env to add OPENAI_API_KEY
    ```
 
-4. **Data Prerequisites:**
-   To run the pipeline and demo, you need the pre-computed embeddings, FAISS index, trained models, and the MIMIC-CXR test set images placed in the `image-data/`, `embeddings/`, and `faiss_index/` directories (these are over 80GB and not tracked in Git).
+4. **Download Core Data (Required for Demo):**
+   The pipeline requires pre-trained models, image embeddings, and a FAISS index to run. These are combined into a lightweight `core-data.zip` release.
+   * Go to the **Releases** section on the GitHub repository.
+   * Download `core-data.zip` (~350 MB).
+   * Extract it directly into the root `major-project/` folder so that you have `models/`, `embeddings/`, and `faiss_index/` directories alongside the code.
+   *(Note: The full 87GB `image-data/` folder is only required if you want to display retrieved X-ray thumbnails in the UI. Without it, the pipeline still generates reports successfully based strictly on text matching.)*
 
 ---
 
