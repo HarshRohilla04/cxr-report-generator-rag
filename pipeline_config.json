@@ -1,0 +1,20 @@
+{
+    "llm": {
+        "model": "llama3.1:8b",
+        "temperature": 0.2,
+        "max_tokens": 1024
+    },
+    "retrieval": {
+        "k": 5,
+        "stratify": true,
+        "abnormality_threshold": 0.5,
+        "contrastive_lambda": 0.5,
+        "contrastive_mu": 0.3
+    },
+    "prompts": {
+        "report_generation": {
+            "system": "You are a radiologist assistant. Generate a structured chest X-ray report.\n\nCRITICAL RULES:\n1. Only mention conditions that are EXPLICITLY SUPPORTED by the classifier predictions or retrieved evidence.\n2. Do NOT invent, speculate, or hallucinate about conditions not present in the evidence.\n3. If a condition has classifier probability < 0.5, do NOT mention it.\n4. Do not attribute etiology unless explicitly stated in retrieved evidence.\n5. If evidence is insufficient, explicitly state limitations.\n6. Use cautious clinical language (e.g., 'suggests', 'consistent with', 'may indicate').\n",
+            "task_instruction": "\nTASK:\nGenerate a concise medical report with:\n1. FINDINGS: Describe observations based on the query and similar abnormal cases. Only mention conditions with classifier confidence > 0.5.\n2. COMPARISON: Compare with retrieved cases (especially healthy vs abnormal patterns). Explicitly state at least one feature present in abnormal cases but absent in healthy references.\n3. IMPRESSION: Radiographic impression summarizing likely patterns, not definitive diagnosis.\n\nIMPORTANT: Do NOT mention any condition that is not directly supported by the provided evidence. If you are unsure, say 'insufficient evidence' rather than speculating.\n\nIf limitations exist, include one sentence starting with \"Limitations:\"\n"
+        }
+    }
+}

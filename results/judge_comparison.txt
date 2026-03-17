@@ -1,0 +1,195 @@
+LLM-AS-JUDGE EVALUATION
+Generator: GPT-4o-mini | Judge: GPT-4o | N=30
+==========================================================================================
+
+  Case     Type         Method   ClinCorr   Halluc   EvGround
+------------------------------------------------------------
+     0   NORMAL    cosine_only          1        1          2
+                          full          2        3          4
+
+     1   NORMAL    cosine_only          5        5          4
+                          full          5        5          5
+
+     4   NORMAL    cosine_only          5        5          4
+                          full          5        5          5
+
+     5   NORMAL    cosine_only          5        5          4
+                          full          5        5          5
+
+     6   NORMAL    cosine_only          4        4          4
+                          full          2        2          2
+
+     9   NORMAL    cosine_only          1        2          3
+                          full          1        1          2
+
+    11   NORMAL    cosine_only          5        5          4
+                          full          5        5          5
+
+    14   NORMAL    cosine_only          1        1          2
+                          full          2        2          3
+
+    15   NORMAL    cosine_only          2        3          3
+                          full          2        3          3
+
+    16   NORMAL    cosine_only          0        0          0
+                          full          1        1          1
+
+    17   NORMAL    cosine_only          3        3          4
+                          full          2        2          3
+
+    18   NORMAL    cosine_only          5        5          5
+                          full          5        5          5
+
+    19   NORMAL    cosine_only          1        1          1
+                          full          1        1          2
+
+    20   NORMAL    cosine_only          3        3          3
+                          full          3        3          4
+
+    21   NORMAL    cosine_only          5        5          4
+                          full          5        5          5
+
+    22   NORMAL    cosine_only          5        5          4
+                          full          5        5          5
+
+    23   NORMAL    cosine_only          5        5          4
+                          full          5        5          5
+
+    24   NORMAL    cosine_only          5        5          4
+                          full          5        5          5
+
+     2 ABNORMAL    cosine_only          4        4          3
+                          full          4        4          3
+
+     3 ABNORMAL    cosine_only          3        3          3
+                          full          3        2          3
+
+     7 ABNORMAL    cosine_only          4        5          5
+                          full          4        4          4
+
+     8 ABNORMAL    cosine_only          2        2          3
+                          full          2        2          2
+
+    10 ABNORMAL    cosine_only          0        0          0
+                          full          1        2          1
+
+    12 ABNORMAL    cosine_only          3        3          4
+                          full          4        4          4
+
+    13 ABNORMAL    cosine_only          5        5          4
+                          full          5        5          4
+
+    30 ABNORMAL    cosine_only          3        3          2
+                          full          3        3          2
+
+    32 ABNORMAL    cosine_only          4        4          4
+                          full          4        4          3
+
+    36 ABNORMAL    cosine_only          3        3          3
+                          full          3        3          3
+
+    37 ABNORMAL    cosine_only          1        2          1
+                          full          1        2          1
+
+    38 ABNORMAL    cosine_only          4        4          3
+                          full          4        4          3
+
+============================================================
+MEAN SCORES
+------------------------------------------------------------
+                   cosine_only       3.23     3.37       3.13
+                          full       3.30     3.40       3.40
+                         delta      +0.07    +0.03      +0.27
+
+JUDGE NOTES:
+------------------------------------------------------------
+Case 0 (NORMAL):
+  cosine: The report incorrectly identifies multiple findings not present in the ground truth and partially aligns with retrieved evidence.
+  full:   The report includes unsupported findings like support devices and lung opacity, but it aligns well with the retrieved evidence for other observations.
+Case 1 (NORMAL):
+  cosine: The report accurately reflects the ground truth of "No Finding" and appropriately references the retrieved evidence.
+  full:   The report accurately reflects the ground truth and retrieved evidence, with no unsupported claims.
+Case 4 (NORMAL):
+  cosine: The report accurately reflects the ground truth of no findings and aligns well with the retrieved evidence, though it could more explicitly reference the evidence.
+  full:   The report accurately reflects the ground truth of no findings and appropriately references the retrieved evidence.
+Case 5 (NORMAL):
+  cosine: The report accurately reflects the ground truth of no findings and appropriately references the retrieved evidence.
+  full:   The report accurately reflects the ground truth of no findings and appropriately references the retrieved evidence.
+Case 6 (NORMAL):
+  cosine: The report correctly identifies the chest X-ray as normal but overemphasizes classifier predictions without strong evidence.
+  full:   The report incorrectly suggests findings not supported by the ground truth and retrieved evidence, with some reliance on classifier predictions rather than evidence.
+Case 9 (NORMAL):
+  cosine: The report incorrectly identifies several findings not present in the ground truth, with some reliance on retrieved evidence but also unsupported claims.
+  full:   The report incorrectly identifies several conditions not present in the ground truth and over-relies on classifier predictions rather than the retrieved evidence.
+Case 11 (NORMAL):
+  cosine: The report accurately reflects the ground truth of "No Finding" and appropriately references the retrieved evidence.
+  full:   The report accurately reflects the ground truth of "No Finding" and appropriately references the retrieved evidence.
+Case 14 (NORMAL):
+  cosine: The report incorrectly identifies multiple conditions not supported by the ground truth or evidence, with some reference to retrieved cases but largely unsupported findings.
+  full:   The report incorrectly identifies findings not present in the ground truth and over-relies on retrieved evidence, leading to unsupported claims.
+Case 15 (NORMAL):
+  cosine: The report incorrectly suggests cardiomegaly despite the ground truth of no findings, but it does reference retrieved evidence.
+  full:   The report incorrectly identifies cardiomegaly despite the ground truth of no findings, but it does reference classifier predictions and retrieved evidence.
+Case 16 (NORMAL):
+  cosine: The report incorrectly identifies multiple findings not supported by the ground truth or evidence, and it does not reference the retrieved evidence.
+  full:   The report incorrectly identifies several conditions not supported by the ground truth or evidence, and it does not adequately reference the retrieved evidence.
+Case 17 (NORMAL):
+  cosine: The report incorrectly mentions a vagal stimulator which is not supported by the ground truth, but it aligns well with the retrieved evidence.
+  full:   The report includes unsupported findings like COPD and atelectasis, which are not consistent with the ground truth of "No Finding."
+Case 18 (NORMAL):
+  cosine: The report accurately reflects the ground truth of no findings and appropriately references the retrieved evidence.
+  full:   The report accurately reflects the ground truth and classifier predictions, with no unsupported claims and clear reliance on retrieved evidence.
+Case 19 (NORMAL):
+  cosine: The report incorrectly identifies findings not supported by the ground truth or evidence, and it misinterprets classifier predictions as definitive findings.
+  full:   The report incorrectly identifies findings not supported by the ground truth or evidence, with some reference to retrieved evidence but largely misinterpreted.
+Case 20 (NORMAL):
+  cosine: The report correctly identifies support devices but overstates the evidence for atelectasis, enlarged cardiomediastinum, pneumothorax, and cardiomegaly, with partial grounding in retrieved evidence.
+  full:   The report correctly identifies support devices but overstates the presence of other conditions not supported by the ground truth.
+Case 21 (NORMAL):
+  cosine: The report accurately reflects the ground truth of "No Finding" and appropriately references the retrieved evidence.
+  full:   The report accurately reflects the ground truth and classifier predictions, with no unsupported findings and clear reliance on retrieved evidence.
+Case 22 (NORMAL):
+  cosine: The report accurately reflects the ground truth and classifier predictions, with minimal reliance on retrieved evidence.
+  full:   The report accurately reflects the ground truth and retrieved evidence, with no unsupported findings.
+Case 23 (NORMAL):
+  cosine: The report accurately reflects the ground truth and classifier predictions, with minimal reliance on retrieved evidence.
+  full:   The report accurately reflects the ground truth and retrieved evidence, with no unsupported claims.
+Case 24 (NORMAL):
+  cosine: The report accurately reflects the ground truth of "No Finding" and appropriately references the retrieved evidence.
+  full:   The report accurately reflects the ground truth of no findings and appropriately references the retrieved evidence.
+Case 2 (ABNORMAL):
+  cosine: The report accurately identifies edema and pleural effusion but includes cardiomegaly and consolidation without strong evidence from retrieved cases.
+  full:   The report accurately identifies edema and pleural effusion but overstates cardiomegaly and consolidation without strong evidence from retrieved reports.
+Case 3 (ABNORMAL):
+  cosine: The report correctly identifies pleural effusion but includes unsupported findings like lung lesion and pneumothorax, partially aligning with retrieved evidence.
+  full:   The report correctly identifies pleural effusion but includes unsupported findings like lung lesion and pneumothorax, partially relying on classifier predictions rather than retrieved evidence.
+Case 7 (ABNORMAL):
+  cosine: The report accurately reflects the evidence and predictions, with no unsupported findings.
+  full:   The report aligns well with predictions and evidence, but mentions of pneumonia and atelectasis are less supported.
+Case 8 (ABNORMAL):
+  cosine: The report mentions unsupported findings like fracture and pneumothorax, and does not clearly align with the retrieved evidence or ground truth.
+  full:   The report mentions several unsupported findings and does not adequately rely on the retrieved evidence.
+Case 10 (ABNORMAL):
+  cosine: The report incorrectly states no abnormalities despite ground truth indicating atelectasis and lung lesion, and it does not reference the retrieved evidence.
+  full:   The report incorrectly states no significant abnormalities despite ground truth indicating atelectasis and lung lesion, and it minimally references retrieved evidence.
+Case 12 (ABNORMAL):
+  cosine: The report correctly identifies edema and cardiomegaly but inaccurately suggests pleural effusion without strong evidence, and it appropriately references retrieved evidence.
+  full:   The report accurately reflects the ground truth and evidence but includes pleural effusion, which is not in the ground truth labels.
+Case 13 (ABNORMAL):
+  cosine: The report accurately reflects the ground truth and classifier predictions, with good use of retrieved evidence, though it could more explicitly reference the evidence.
+  full:   The report accurately reflects the classifier predictions and retrieved evidence, with slight room for improvement in explicitly referencing the evidence.
+Case 30 (ABNORMAL):
+  cosine: The report mentions potential pneumothorax and consolidation, which are not supported by the ground truth or evidence, and it does not clearly reference the retrieved evidence.
+  full:   The report correctly identifies some findings but includes unsupported claims like mild cardiomegaly and lacks clear grounding in the retrieved evidence.
+Case 32 (ABNORMAL):
+  cosine: The report accurately identifies cardiomegaly and edema but includes unsupported pleural effusion, with good use of evidence.
+  full:   The report accurately identifies cardiomegaly and edema but incorrectly suggests pleural effusion, which is not supported by the ground truth or evidence.
+Case 36 (ABNORMAL):
+  cosine: The report includes unsupported findings like pneumothorax and fracture, but correctly identifies atelectasis and lung opacity, partially aligning with the evidence.
+  full:   The report includes unsupported findings like pneumothorax and pleural effusion, but correctly identifies atelectasis and references retrieved evidence.
+Case 37 (ABNORMAL):
+  cosine: The report incorrectly states no significant abnormalities despite the ground truth indicating a lung lesion, and it minimally references the retrieved evidence.
+  full:   The report incorrectly states a normal finding, ignoring the ground truth of a lung lesion and retrieved evidence of abnormalities.
+Case 38 (ABNORMAL):
+  cosine: The report accurately identifies cardiomegaly and support devices but overemphasizes the enlarged cardiomediastinum without strong evidence from retrieved cases.
+  full:   The report accurately identifies cardiomegaly and support devices but overemphasizes the enlarged cardiomediastinum without strong evidence from the retrieved reports.

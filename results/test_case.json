@@ -1,0 +1,132 @@
+{
+  "image_path": "./image-data/image/abnormal/files/p10/p10000935/s51178377/9b314ad7-fbcb0422-6db62dfc-732858d0-a5527d8b.jpg",
+  "abnormality_score": 0.10743343830108643,
+  "abnormality_label": "abnormal",
+  "override_reason": "classifier_confidence",
+  "disease_probabilities": {
+    "Atelectasis": 0.6508995890617371,
+    "Cardiomegaly": 0.6554962396621704,
+    "Consolidation": 0.6341953873634338,
+    "Edema": 0.6421976685523987,
+    "Enlarged Cardiomediastinum": 0.6246672868728638,
+    "Fracture": 0.6195911765098572,
+    "Lung Lesion": 0.63332599401474,
+    "Lung Opacity": 0.6549780368804932,
+    "Pleural Effusion": 0.6603705883026123,
+    "Pleural Other": 0.6363455057144165,
+    "Pneumonia": 0.6370311379432678,
+    "Pneumothorax": 0.6264886260032654,
+    "Support Devices": 0.588219940662384,
+    "No Finding": 0.22823946177959442
+  },
+  "top_diseases": [
+    [
+      "Pleural Effusion",
+      0.6603705883026123
+    ],
+    [
+      "Cardiomegaly",
+      0.6554962396621704
+    ],
+    [
+      "Lung Opacity",
+      0.6549780368804932
+    ],
+    [
+      "Atelectasis",
+      0.6508995890617371
+    ],
+    [
+      "Edema",
+      0.6421976685523987
+    ]
+  ],
+  "retrieved_cases": {
+    "abnormal": [
+      {
+        "image_path": "files/p10/p10000935/s51178377/9b314ad7-fbcb0422-6db62dfc-732858d0-a5527d8b.jpg",
+        "label": 1,
+        "subject_id": 10000935,
+        "study_id": 51178377,
+        "abnormality_score": 0.10743355751037598,
+        "similarity": 1.1074334383010864,
+        "original_similarity": 1.0
+      },
+      {
+        "image_path": "files/p10/p10447495/s54201501/765db124-ce236637-3232611f-86fc37a1-9220e33a.jpg",
+        "label": 1,
+        "subject_id": 10447495,
+        "study_id": 54201501,
+        "abnormality_score": 0.1024312973022461,
+        "similarity": 1.0620633121183332,
+        "original_similarity": 0.9590312838554382
+      },
+      {
+        "image_path": "files/p11/p11742241/s57758589/877b06da-68cbf218-1d226646-e364caad-32576359.jpg",
+        "label": 1,
+        "subject_id": 11742241,
+        "study_id": 57758589,
+        "abnormality_score": 0.09496521949768066,
+        "similarity": 1.0595479385287376,
+        "original_similarity": 0.9567599296569824
+      },
+      {
+        "image_path": "files/p10/p10141364/s54252162/b3329a42-da6e8a2c-81188855-9914929e-6763adde.jpg",
+        "label": 1,
+        "subject_id": 10141364,
+        "study_id": 54252162,
+        "abnormality_score": 0.1231122612953186,
+        "similarity": 1.0576387180257996,
+        "original_similarity": 0.955035924911499
+      },
+      {
+        "image_path": "files/p14/p14576916/s56915386/c1314ecf-5fbefcd9-7408bf6d-acb569b5-0cfe1c30.jpg",
+        "label": 1,
+        "subject_id": 14576916,
+        "study_id": 56915386,
+        "abnormality_score": 0.09428679943084717,
+        "similarity": 1.0573653121578985,
+        "original_similarity": 0.9547890424728394
+      }
+    ],
+    "healthy": [
+      {
+        "image_path": "files/p10/p10572099/s50293790/5058a7bc-df62b976-a3c4e7d4-3262c201-a4f3b970.jpg",
+        "label": 0,
+        "subject_id": 10572099,
+        "study_id": 50293790,
+        "abnormality_score": 0.09392112493515015,
+        "similarity": 1.0627497971560373,
+        "original_similarity": 0.9596511721611023
+      },
+      {
+        "image_path": "files/p14/p14894374/s55649477/076f1058-d7b7fcc2-4d119353-0cbe661b-9551f501.jpg",
+        "label": 0,
+        "subject_id": 14894374,
+        "study_id": 55649477,
+        "abnormality_score": 0.09282594919204712,
+        "similarity": 1.0532835645351568,
+        "original_similarity": 0.9511032700538635
+      },
+      {
+        "image_path": "files/p12/p12766828/s55536657/4e07e3dc-08b264b0-bb66bf22-00665e5c-d2783edc.jpg",
+        "label": 0,
+        "subject_id": 12766828,
+        "study_id": 55536657,
+        "abnormality_score": 0.11428695917129517,
+        "similarity": 1.0522904715166703,
+        "original_similarity": 0.9502065181732178
+      },
+      {
+        "image_path": "files/p11/p11084812/s58704876/1f7a6dca-ada9a463-9cb5dd1e-4d5d459a-5272a4c9.jpg",
+        "label": 0,
+        "subject_id": 11084812,
+        "study_id": 58704876,
+        "abnormality_score": 0.07330071926116943,
+        "similarity": 1.049487236268476,
+        "original_similarity": 0.9476752281188965
+      }
+    ]
+  },
+  "generated_report": "**Chest X-ray Report**\n\n**FINDINGS:** The query case reveals multiple predicted abnormalities, including Pleural Effusion (0.66), Cardiomegaly (0.66), Lung Opacity (0.65), Atelectasis (0.65), and Edema (0.64). Similar cases with high similarity scores (>1.05) also show these patterns.\n\n**COMPARISON:** Compared to the healthy references, the abnormal cases exhibit a notable feature: Cardiomegaly is consistently present in all similar abnormal cases but absent in both healthy references. Additionally, Pleural Effusion and Lung Opacity are more pronounced in the query case compared to the healthy references.\n\n**LIMITATIONS:** The high classifier confidence despite low geometric score suggests that further evaluation may be necessary for definitive diagnosis.\n\n**IMPRESSION:** The radiographic findings suggest Cardiomegaly, Pleural Effusion, and possible Lung Opacity or Atelectasis. Further diagnostic workup is recommended to confirm these impressions."
+}

@@ -1,0 +1,583 @@
+[
+  {
+    "case_idx": 0,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 1,
+      "hallucination": 1,
+      "evidence_grounding": 2,
+      "note": "The report incorrectly identifies multiple findings not present in the ground truth and partially aligns with retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 2,
+      "hallucination": 3,
+      "evidence_grounding": 4,
+      "note": "The report includes unsupported findings like support devices and lung opacity, but it aligns well with the retrieved evidence for other observations."
+    }
+  },
+  {
+    "case_idx": 1,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 4,
+      "note": "The report accurately reflects the ground truth of \"No Finding\" and appropriately references the retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 5,
+      "note": "The report accurately reflects the ground truth and retrieved evidence, with no unsupported claims."
+    }
+  },
+  {
+    "case_idx": 4,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 4,
+      "note": "The report accurately reflects the ground truth of no findings and aligns well with the retrieved evidence, though it could more explicitly reference the evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 5,
+      "note": "The report accurately reflects the ground truth of no findings and appropriately references the retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 5,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 4,
+      "note": "The report accurately reflects the ground truth of no findings and appropriately references the retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 5,
+      "note": "The report accurately reflects the ground truth of no findings and appropriately references the retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 6,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 4,
+      "hallucination": 4,
+      "evidence_grounding": 4,
+      "note": "The report correctly identifies the chest X-ray as normal but overemphasizes classifier predictions without strong evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 2,
+      "hallucination": 2,
+      "evidence_grounding": 2,
+      "note": "The report incorrectly suggests findings not supported by the ground truth and retrieved evidence, with some reliance on classifier predictions rather than evidence."
+    }
+  },
+  {
+    "case_idx": 9,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 1,
+      "hallucination": 2,
+      "evidence_grounding": 3,
+      "note": "The report incorrectly identifies several findings not present in the ground truth, with some reliance on retrieved evidence but also unsupported claims."
+    },
+    "full_scores": {
+      "clinical_correctness": 1,
+      "hallucination": 1,
+      "evidence_grounding": 2,
+      "note": "The report incorrectly identifies several conditions not present in the ground truth and over-relies on classifier predictions rather than the retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 11,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 4,
+      "note": "The report accurately reflects the ground truth of \"No Finding\" and appropriately references the retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 5,
+      "note": "The report accurately reflects the ground truth of \"No Finding\" and appropriately references the retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 14,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 1,
+      "hallucination": 1,
+      "evidence_grounding": 2,
+      "note": "The report incorrectly identifies multiple conditions not supported by the ground truth or evidence, with some reference to retrieved cases but largely unsupported findings."
+    },
+    "full_scores": {
+      "clinical_correctness": 2,
+      "hallucination": 2,
+      "evidence_grounding": 3,
+      "note": "The report incorrectly identifies findings not present in the ground truth and over-relies on retrieved evidence, leading to unsupported claims."
+    }
+  },
+  {
+    "case_idx": 15,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 2,
+      "hallucination": 3,
+      "evidence_grounding": 3,
+      "note": "The report incorrectly suggests cardiomegaly despite the ground truth of no findings, but it does reference retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 2,
+      "hallucination": 3,
+      "evidence_grounding": 3,
+      "note": "The report incorrectly identifies cardiomegaly despite the ground truth of no findings, but it does reference classifier predictions and retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 16,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "Support Devices",
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 0,
+      "hallucination": 0,
+      "evidence_grounding": 0,
+      "note": "The report incorrectly identifies multiple findings not supported by the ground truth or evidence, and it does not reference the retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 1,
+      "hallucination": 1,
+      "evidence_grounding": 1,
+      "note": "The report incorrectly identifies several conditions not supported by the ground truth or evidence, and it does not adequately reference the retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 17,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 3,
+      "hallucination": 3,
+      "evidence_grounding": 4,
+      "note": "The report incorrectly mentions a vagal stimulator which is not supported by the ground truth, but it aligns well with the retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 2,
+      "hallucination": 2,
+      "evidence_grounding": 3,
+      "note": "The report includes unsupported findings like COPD and atelectasis, which are not consistent with the ground truth of \"No Finding.\""
+    }
+  },
+  {
+    "case_idx": 18,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 5,
+      "note": "The report accurately reflects the ground truth of no findings and appropriately references the retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 5,
+      "note": "The report accurately reflects the ground truth and classifier predictions, with no unsupported claims and clear reliance on retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 19,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 1,
+      "hallucination": 1,
+      "evidence_grounding": 1,
+      "note": "The report incorrectly identifies findings not supported by the ground truth or evidence, and it misinterprets classifier predictions as definitive findings."
+    },
+    "full_scores": {
+      "clinical_correctness": 1,
+      "hallucination": 1,
+      "evidence_grounding": 2,
+      "note": "The report incorrectly identifies findings not supported by the ground truth or evidence, with some reference to retrieved evidence but largely misinterpreted."
+    }
+  },
+  {
+    "case_idx": 20,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "Support Devices",
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 3,
+      "hallucination": 3,
+      "evidence_grounding": 3,
+      "note": "The report correctly identifies support devices but overstates the evidence for atelectasis, enlarged cardiomediastinum, pneumothorax, and cardiomegaly, with partial grounding in retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 3,
+      "hallucination": 3,
+      "evidence_grounding": 4,
+      "note": "The report correctly identifies support devices but overstates the presence of other conditions not supported by the ground truth."
+    }
+  },
+  {
+    "case_idx": 21,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 4,
+      "note": "The report accurately reflects the ground truth of \"No Finding\" and appropriately references the retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 5,
+      "note": "The report accurately reflects the ground truth and classifier predictions, with no unsupported findings and clear reliance on retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 22,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 4,
+      "note": "The report accurately reflects the ground truth and classifier predictions, with minimal reliance on retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 5,
+      "note": "The report accurately reflects the ground truth and retrieved evidence, with no unsupported findings."
+    }
+  },
+  {
+    "case_idx": 23,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 4,
+      "note": "The report accurately reflects the ground truth and classifier predictions, with minimal reliance on retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 5,
+      "note": "The report accurately reflects the ground truth and retrieved evidence, with no unsupported claims."
+    }
+  },
+  {
+    "case_idx": 24,
+    "case_type": "NORMAL",
+    "gt_labels": [
+      "No Finding"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 4,
+      "note": "The report accurately reflects the ground truth of \"No Finding\" and appropriately references the retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 5,
+      "note": "The report accurately reflects the ground truth of no findings and appropriately references the retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 2,
+    "case_type": "ABNORMAL",
+    "gt_labels": [
+      "Edema",
+      "Pleural Effusion",
+      "Support Devices"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 4,
+      "hallucination": 4,
+      "evidence_grounding": 3,
+      "note": "The report accurately identifies edema and pleural effusion but includes cardiomegaly and consolidation without strong evidence from retrieved cases."
+    },
+    "full_scores": {
+      "clinical_correctness": 4,
+      "hallucination": 4,
+      "evidence_grounding": 3,
+      "note": "The report accurately identifies edema and pleural effusion but overstates cardiomegaly and consolidation without strong evidence from retrieved reports."
+    }
+  },
+  {
+    "case_idx": 3,
+    "case_type": "ABNORMAL",
+    "gt_labels": [
+      "Edema",
+      "Pleural Effusion"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 3,
+      "hallucination": 3,
+      "evidence_grounding": 3,
+      "note": "The report correctly identifies pleural effusion but includes unsupported findings like lung lesion and pneumothorax, partially aligning with retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 3,
+      "hallucination": 2,
+      "evidence_grounding": 3,
+      "note": "The report correctly identifies pleural effusion but includes unsupported findings like lung lesion and pneumothorax, partially relying on classifier predictions rather than retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 7,
+    "case_type": "ABNORMAL",
+    "gt_labels": [],
+    "cosine_scores": {
+      "clinical_correctness": 4,
+      "hallucination": 5,
+      "evidence_grounding": 5,
+      "note": "The report accurately reflects the evidence and predictions, with no unsupported findings."
+    },
+    "full_scores": {
+      "clinical_correctness": 4,
+      "hallucination": 4,
+      "evidence_grounding": 4,
+      "note": "The report aligns well with predictions and evidence, but mentions of pneumonia and atelectasis are less supported."
+    }
+  },
+  {
+    "case_idx": 8,
+    "case_type": "ABNORMAL",
+    "gt_labels": [
+      "Cardiomegaly",
+      "Support Devices"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 2,
+      "hallucination": 2,
+      "evidence_grounding": 3,
+      "note": "The report mentions unsupported findings like fracture and pneumothorax, and does not clearly align with the retrieved evidence or ground truth."
+    },
+    "full_scores": {
+      "clinical_correctness": 2,
+      "hallucination": 2,
+      "evidence_grounding": 2,
+      "note": "The report mentions several unsupported findings and does not adequately rely on the retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 10,
+    "case_type": "ABNORMAL",
+    "gt_labels": [
+      "Atelectasis",
+      "Lung Lesion"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 0,
+      "hallucination": 0,
+      "evidence_grounding": 0,
+      "note": "The report incorrectly states no abnormalities despite ground truth indicating atelectasis and lung lesion, and it does not reference the retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 1,
+      "hallucination": 2,
+      "evidence_grounding": 1,
+      "note": "The report incorrectly states no significant abnormalities despite ground truth indicating atelectasis and lung lesion, and it minimally references retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 12,
+    "case_type": "ABNORMAL",
+    "gt_labels": [
+      "Edema",
+      "Lung Opacity"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 3,
+      "hallucination": 3,
+      "evidence_grounding": 4,
+      "note": "The report correctly identifies edema and cardiomegaly but inaccurately suggests pleural effusion without strong evidence, and it appropriately references retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 4,
+      "hallucination": 4,
+      "evidence_grounding": 4,
+      "note": "The report accurately reflects the ground truth and evidence but includes pleural effusion, which is not in the ground truth labels."
+    }
+  },
+  {
+    "case_idx": 13,
+    "case_type": "ABNORMAL",
+    "gt_labels": [],
+    "cosine_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 4,
+      "note": "The report accurately reflects the ground truth and classifier predictions, with good use of retrieved evidence, though it could more explicitly reference the evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 5,
+      "hallucination": 5,
+      "evidence_grounding": 4,
+      "note": "The report accurately reflects the classifier predictions and retrieved evidence, with slight room for improvement in explicitly referencing the evidence."
+    }
+  },
+  {
+    "case_idx": 30,
+    "case_type": "ABNORMAL",
+    "gt_labels": [
+      "Edema",
+      "Lung Opacity",
+      "Pleural Effusion",
+      "Support Devices"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 3,
+      "hallucination": 3,
+      "evidence_grounding": 2,
+      "note": "The report mentions potential pneumothorax and consolidation, which are not supported by the ground truth or evidence, and it does not clearly reference the retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 3,
+      "hallucination": 3,
+      "evidence_grounding": 2,
+      "note": "The report correctly identifies some findings but includes unsupported claims like mild cardiomegaly and lacks clear grounding in the retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 32,
+    "case_type": "ABNORMAL",
+    "gt_labels": [
+      "Cardiomegaly",
+      "Edema"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 4,
+      "hallucination": 4,
+      "evidence_grounding": 4,
+      "note": "The report accurately identifies cardiomegaly and edema but includes unsupported pleural effusion, with good use of evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 4,
+      "hallucination": 4,
+      "evidence_grounding": 3,
+      "note": "The report accurately identifies cardiomegaly and edema but incorrectly suggests pleural effusion, which is not supported by the ground truth or evidence."
+    }
+  },
+  {
+    "case_idx": 36,
+    "case_type": "ABNORMAL",
+    "gt_labels": [
+      "Atelectasis",
+      "Lung Opacity"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 3,
+      "hallucination": 3,
+      "evidence_grounding": 3,
+      "note": "The report includes unsupported findings like pneumothorax and fracture, but correctly identifies atelectasis and lung opacity, partially aligning with the evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 3,
+      "hallucination": 3,
+      "evidence_grounding": 3,
+      "note": "The report includes unsupported findings like pneumothorax and pleural effusion, but correctly identifies atelectasis and references retrieved evidence."
+    }
+  },
+  {
+    "case_idx": 37,
+    "case_type": "ABNORMAL",
+    "gt_labels": [
+      "Lung Lesion"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 1,
+      "hallucination": 2,
+      "evidence_grounding": 1,
+      "note": "The report incorrectly states no significant abnormalities despite the ground truth indicating a lung lesion, and it minimally references the retrieved evidence."
+    },
+    "full_scores": {
+      "clinical_correctness": 1,
+      "hallucination": 2,
+      "evidence_grounding": 1,
+      "note": "The report incorrectly states a normal finding, ignoring the ground truth of a lung lesion and retrieved evidence of abnormalities."
+    }
+  },
+  {
+    "case_idx": 38,
+    "case_type": "ABNORMAL",
+    "gt_labels": [
+      "Cardiomegaly",
+      "Edema",
+      "Support Devices"
+    ],
+    "cosine_scores": {
+      "clinical_correctness": 4,
+      "hallucination": 4,
+      "evidence_grounding": 3,
+      "note": "The report accurately identifies cardiomegaly and support devices but overemphasizes the enlarged cardiomediastinum without strong evidence from retrieved cases."
+    },
+    "full_scores": {
+      "clinical_correctness": 4,
+      "hallucination": 4,
+      "evidence_grounding": 3,
+      "note": "The report accurately identifies cardiomegaly and support devices but overemphasizes the enlarged cardiomediastinum without strong evidence from the retrieved reports."
+    }
+  }
+]

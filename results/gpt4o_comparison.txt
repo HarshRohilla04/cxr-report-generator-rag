@@ -1,0 +1,20 @@
+GPT-4o-mini ROBUSTNESS CHECK (N=40, seed=42)
+============================================================
+  cosine_only: llm=gpt-4o-mini, provider=openai
+  full: llm=gpt-4o-mini, provider=openai
+
+Metric                    cosine_only             full       delta
+-----------------------------------------------------------------
+avg_meteor                     0.1745           0.1803  +     3.3%
+precision                      0.2296           0.3231  +    40.7%
+recall                         0.5636           0.7636  +    35.5%
+f1                             0.3263           0.4541  +    39.1%
+
+CROSS-LLM COMPARISON (cosine_only vs full)
+-----------------------------------------------------------------
+Metric                   Llama cos    Llama full      GPT cos     GPT full
+----------------------------------------------------------------------
+avg_meteor                  0.1794        0.1860       0.1745       0.1803
+precision                   0.3284        0.3284       0.2296       0.3231
+recall                      0.7943        0.7801       0.5636       0.7636
+f1                          0.4647        0.4622       0.3263       0.4541
